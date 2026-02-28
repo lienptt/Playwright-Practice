@@ -171,7 +171,7 @@ test('transport registration flow', async ({ page }) => {
   await nextStep.click();
 
   // Step 4: Confirm & submit
-  await page.getByRole('checkbox', { name: 'I agree to the Terms & Conditions' }).click();
+  await page.getByRole('checkbox', { name: 'I agree to the Terms & Conditions' }).check();
   await page.getByRole('checkbox', { name: 'I understand that fees may' }).check();
   await page.getByRole('checkbox', { name: 'I confirm the provided' }).check();
   await page.getByRole('checkbox', { name: 'Subscribe to shipment updates' }).check();
